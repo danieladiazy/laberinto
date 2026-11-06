@@ -1,0 +1,57 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.laberinto {
+    position: relative; 
+    width: 650px;
+    height: 650px;
+    background-image: url("imagenes/laberinto.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.mono {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 255.5px;
+    top: 24.5px;
+    background-color: blue;
+    animation: camino 20s linear infinite;
+}
+
+@keyframes camino {
+
+0%    { width: 60px; height: 60px; left: 255.5px; top: 24.5px; background-color: blue; transform: rotate(0deg); }
+7%    { width: 40px; height: 40px; left: 265.5px; top: 82.2273px; border-radius: 50%; }
+11%   { width: 40px; height: 40px; left: 265.5px; top: 109.5px; border-radius: 50%; }
+15%   { width: 40px; height: 40px; left: 420.5px; top: 109.5px; border-radius: 50%; }
+18%   { width: 40px; height: 40px; left: 420.5px; top: 194.5px; border-radius: 50%; }
+22%   { width: 40px; height: 40px; left: 340.5px; top: 194.5px; border-radius: 50%; }
+29%   { width: 40px; height: 40px; left: 340.5px; top: 344.5px; border-radius: 50%; }
+33%   { width: 40px; height: 40px; left: 490.5px; top: 344.5px; border-radius: 50%; }
+37%   { width: 40px; height: 40px; left: 490.5px; top: 504.5px; border-radius: 50%; }
+41%   { width: 40px; height: 40px; left: 340.5px; top: 504.5px; border-radius: 50%; }
+44%   { width: 40px; height: 40px; left: 340.5px; top: 424.5px; border-radius: 50%; }
+48%   { width: 40px; height: 40px; left: 260.5px; top: 424.5px; border-radius: 50%; }
+52%   { width: 40px; height: 40px; left: 260.5px; top: 504.5px; border-radius: 50%; }
+55%   { width: 40px; height: 40px; left: 180.5px; top: 504.5px; border-radius: 50%; }
+59%   { width: 40px; height: 40px; left: 180.5px; top: 344.5px; border-radius: 50%; }
+63%   { width: 40px; height: 40px; left: 100.5px; top: 344.5px; border-radius: 50%; }
+66%   { width: 40px; height: 40px; left: 100.5px; top: 424.5px; border-radius: 50%; }
+70%   { width: 40px; height: 40px; left: 20.5px; top: 424.5px; border-radius: 50%; clip-path: none; background-color: blue; }
+70.1% { width: 50px; height: 50px; left: 15.5px; top: 419.5px; border-radius: 0; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); background-color: gold; transform: rotate(0deg); }
+74%   { width: 50px; height: 50px; left: 15.5px; top: 579.5px; border-radius: 0; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); background-color: orange; transform: rotate(360deg); }
+80%   { width: 50px; height: 50px; left: 585.5px; top: 579.5px; border-radius: 0; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); background-color: red; transform: rotate(720deg); }
+87%   { width: 50px; height: 50px; left: 585.5px; top: 29.5px; border-radius: 0; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); background-color: purple; transform: rotate(1080deg); }
+94%   { width: 50px; height: 50px; left: 260.5px; top: 29.5px; border-radius: 0; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); background-color: green; transform: rotate(1440deg); }
+99.9% { width: 50px; height: 50px; left: 260.5px; top: 29.5px; border-radius: 0; clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%); background-color: gold; transform: rotate(2159deg); }
+100%  { width: 60px; height: 60px; left: 255.5px; top: 24.5px; border-radius: 0; clip-path: none; background-color: blue; transform: rotate(2160deg); }
+
+}
